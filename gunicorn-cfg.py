@@ -3,7 +3,7 @@
 Copyright (c) 2019 - present AppSeed.us
 """
 
-wsgi_app = "core.wsgi"
+wsgi_app = "core.wsgi.application"
 bind = '0.0.0.0'
 workers = 1
 accesslog = '-'
