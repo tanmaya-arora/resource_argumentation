@@ -104,17 +104,17 @@ elif len(sys.argv) > 0 and sys.argv[1] != 'collectstatic':
     DATABASES = {
         "default": dj_database_url.parse(os.environ.get("DATABASE_URL")),
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': config.get('database', 'NAME'),
-            "USER": config.get('database', 'USER'),
-            "PASSWORD": config.get('database', 'PASSWORD'),
-            "HOST": "localhost",
-            "PORT": "3306",
-        }
-    }
+# else:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.mysql',
+#             'NAME': config.get('database', 'NAME'),
+#             "USER": config.get('database', 'USER'),
+#             "PASSWORD": config.get('database', 'PASSWORD'),
+#             "HOST": "localhost",
+#             "PORT": "3306",
+#         }
+#     }
 
 
 # Password validation
